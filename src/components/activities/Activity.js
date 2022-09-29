@@ -36,7 +36,7 @@ const Activity = () => {
                 </div>
             </div>
             <div className="information-container">
-                <Profile></Profile>
+                <Profile cart={cart}></Profile>
             </div>
         </div>
     );

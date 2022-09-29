@@ -1,0 +1,36 @@
+.full-profile {
+    background-color: lightsteelblue;
+    height: 850px;
+    border: 1px solid #95A0A7;
+}
+
+.age-weight {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    margin: 25px 10px;
+    font-size: larger;
+    font-weight: 700;
+    padding: 7px;
+}
+
+.time-option {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 10px;
+    margin: 25px 10px;
+    font-size: larger;
+    font-weight: 700;
+    padding: 7px;
+}
+
+.excercise-time {
+    background-color: beige;
+    border-radius: 10px;
+    margin: 25px 10px;
+    font-size: larger;
+    font-weight: 700;
+    padding: 7px;
+}
