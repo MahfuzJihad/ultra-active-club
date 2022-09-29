@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import Profile from '../Profile/Profile';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAllergies } from '@fortawesome/free-solid-svg-icons';
 import './Activity.css';
 const Activity = () => {
     const [products, setProducts] = useState([]);
@@ -22,7 +24,10 @@ const Activity = () => {
         <div className='club-container'>
 
             <div className='left-cart'>
-                <h1 className='site-name'>GUB-Fitness-club</h1>
+                <div className='font-icon'>
+                    <FontAwesomeIcon icon={faAllergies}></FontAwesomeIcon>
+                    <h1 className='site-name'>GUB-Fitness-club</h1>
+                </div>
                 <div className="activity-container">
 
                     {
