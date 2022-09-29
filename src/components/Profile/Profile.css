@@ -34,3 +34,11 @@
     font-weight: 700;
     padding: 7px;
 }
+
+.cpl-btn {
+    width: 250px;
+    margin-left: 50px;
+    background: slateblue;
+    border: none;
+    border-radius: 10px;
+}

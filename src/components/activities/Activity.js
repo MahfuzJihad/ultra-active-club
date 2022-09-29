@@ -28,7 +28,7 @@ const Activity = () => {
                     {
 
                         products.map(product => <Product
-                            key={product.age}
+                            key={product.id}
                             product={product}
                             handleAddToCart={handleAddToCart}
                         ></Product>)
