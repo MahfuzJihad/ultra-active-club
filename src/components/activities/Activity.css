@@ -1,0 +1,17 @@
+.club-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.activity-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px;
+}
+
+.site-name {
+    margin-left: 100px;
+}
+
+@media screen and(max-width:1100px) {}
