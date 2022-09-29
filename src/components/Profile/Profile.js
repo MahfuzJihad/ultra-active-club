@@ -14,10 +14,10 @@ const Profile = ({ cart }) => {
             </div>
             <h3>Add a break</h3>
             <div className='time-option'>
-                <p>30</p>
-                <p>35</p>
-                <p>40</p>
-                <p>45</p>
+                <button>30</button>
+                <button>35</button>
+                <button>25</button>
+                <button>45</button>
             </div>
 
             <h3>Exercise Details</h3>

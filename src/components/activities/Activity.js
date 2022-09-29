@@ -22,7 +22,7 @@ const Activity = () => {
         <div className='club-container'>
 
             <div className='left-cart'>
-                <h1 className='site-name'>Ultra-Active-club</h1>
+                <h1 className='site-name'>GUB-Fitness-club</h1>
                 <div className="activity-container">
 
                     {
