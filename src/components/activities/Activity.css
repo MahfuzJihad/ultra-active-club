@@ -3,6 +3,10 @@
     grid-template-columns: 3fr 1fr;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .activity-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -20,4 +24,18 @@
     color: blueviolet;
 }
 
-@media screen and(max-width:1100px) {}
+@media screen and (max-width:576px) {
+    .activity-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .club-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .site-name {
+        margin-left: 25spx;
+    }
+}

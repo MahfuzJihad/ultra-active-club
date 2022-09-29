@@ -1,7 +1,8 @@
 .button-cmp {
+    color: aliceblue;
     width: 250px;
     margin: 45px;
-
+    background-color: blueviolet;
     border: none;
     border-radius: 10px;
 }

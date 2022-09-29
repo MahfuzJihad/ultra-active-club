@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
+import './AutohideExample.css';
 
 function AutohideExample() {
     const [show, setShow] = useState(false);
@@ -24,8 +25,8 @@ function AutohideExample() {
                 </Toast>
             </Col>
             <Col xs={6}>
-                <Button onClick={() => setShow(true)}>
-                    <p className='button-cmp'>Activity Completed</p>
+                <Button className='button-cmp' onClick={() => setShow(true)}>
+                    <p >Activity Completed</p>
                 </Button>
             </Col>
         </Row>
