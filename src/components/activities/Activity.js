@@ -25,8 +25,8 @@ const Activity = () => {
 
             <div className='left-cart'>
                 <div className='font-icon'>
-                    <FontAwesomeIcon icon={faAllergies}></FontAwesomeIcon>
-                    <h1 className='site-name'>GUB-Fitness-club</h1>
+
+                    <h1 className='site-name'> <FontAwesomeIcon icon={faAllergies}></FontAwesomeIcon><span>GUB-Fitness-Club</span></h1>
                 </div>
                 <div className="activity-container">
 
