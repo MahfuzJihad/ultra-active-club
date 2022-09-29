@@ -4,6 +4,7 @@ import Profile from '../Profile/Profile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAllergies } from '@fortawesome/free-solid-svg-icons';
 import './Activity.css';
+import Questionsans from '../Questionsans/Questionsans';
 const Activity = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
@@ -21,29 +22,34 @@ const Activity = () => {
     }
 
     return (
-        <div className='club-container'>
+        <div>
+            <div className='club-container'>
 
-            <div className='left-cart'>
-                <div className='font-icon'>
+                <div className='left-cart'>
+                    <div className='font-icon'>
 
-                    <h1 className='site-name'> <FontAwesomeIcon icon={faAllergies}></FontAwesomeIcon><span>GUB-Fitness-Club</span></h1>
+                        <h1 className='site-name'> <FontAwesomeIcon icon={faAllergies}></FontAwesomeIcon><span>GUB-Fitness-Club</span></h1>
+                    </div>
+                    <div className="activity-container">
+
+                        {
+
+                            products.map(product => <Product
+                                key={product.id}
+                                product={product}
+                                handleAddToCart={handleAddToCart}
+                            ></Product>)
+                        }
+                    </div>
                 </div>
-                <div className="activity-container">
-
-                    {
-
-                        products.map(product => <Product
-                            key={product.id}
-                            product={product}
-                            handleAddToCart={handleAddToCart}
-                        ></Product>)
-                    }
+                <div className="information-container">
+                    <Profile cart={cart}></Profile>
                 </div>
             </div>
-            <div className="information-container">
-                <Profile cart={cart}></Profile>
-            </div>
+            <Questionsans></Questionsans>
         </div>
+
+
     );
 };
 

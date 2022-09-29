@@ -17,14 +17,16 @@ function AutohideExample() {
                             className="rounded me-2"
                             alt=""
                         />
-                        <strong className="me-auto">Bootstrap</strong>
-                        <small>11 mins ago</small>
+                        {/* <strong className="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small> */}
                     </Toast.Header>
-                    <Toast.Body>Woohoo, you're reading this text in a Toast!</Toast.Body>
+                    <Toast.Body>Congratulation!! You successfully Completed</Toast.Body>
                 </Toast>
             </Col>
             <Col xs={6}>
-                <Button onClick={() => setShow(true)}>Show Toast</Button>
+                <Button onClick={() => setShow(true)}>
+                    <p className='button-cmp'>Activity Completed</p>
+                </Button>
             </Col>
         </Row>
     );
