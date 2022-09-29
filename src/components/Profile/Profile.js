@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
-import { addToDb } from '../../utilities/data';
+import React, { useEffect, useState } from 'react';
+import { addToDb, getStoredTime } from '../../utilities/data';
+import AutohideExample from '../AutohideExample/AutohideExample';
+import img from '../../image/jihaddp1.jpg'
 
 import './Profile.css'
 
 const Profile = (props) => {
     const { cart } = props;
     const [breakTime, setBreakTime] = useState([]);
+
+    useEffect(() => {
+        const storedBreakTime = getStoredTime();
+        const savedBreakTime = [];
+        for (const e in storedBreakTime) {
+            savedBreakTime.push(e);
+            setBreakTime(savedBreakTime);
+        }
+    }, []);
     const handle = (e) => {
         setBreakTime(e.target.value);
         addToDb(e.target.value)
@@ -19,7 +30,8 @@ const Profile = (props) => {
 
     return (
         <div className='full-profile'>
-            <div>
+            <div className='pic-img'>
+                <img src={img} alt="" className='profile-pic'></img>
                 <h3>Jihad Mahfuz</h3>
             </div>
             <div className='age-weight'>
@@ -42,9 +54,8 @@ const Profile = (props) => {
             <div className='excercise-time'>
                 <p>Break Time:{breakTime} </p>
             </div>
-            <button className='cpl-btn'>
-                <p>Activity Complete</p>
-            </button>
+            <AutohideExample></AutohideExample>
+
         </div>
 
     );

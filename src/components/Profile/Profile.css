@@ -42,3 +42,14 @@
     border: none;
     border-radius: 10px;
 }
+
+.profile-pic {
+    width: 20%;
+    height: 20%;
+    border-radius: 40px;
+}
+
+.pic-img {
+    display: flex;
+    align-items: center;
+}
