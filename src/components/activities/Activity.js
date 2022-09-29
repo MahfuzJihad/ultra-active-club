@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import Profile from '../Profile/Profile';
 import './Activity.css';
 const Activity = () => {
     const [products, setProducts] = useState([]);
@@ -20,7 +21,7 @@ const Activity = () => {
     return (
         <div className='club-container'>
 
-            <div>
+            <div className='left-cart'>
                 <h1 className='site-name'>Ultra-Active-club</h1>
                 <div className="activity-container">
 
@@ -35,8 +36,7 @@ const Activity = () => {
                 </div>
             </div>
             <div className="information-container">
-                <h3>Profile</h3>
-                <p>Selected items: {cart.length}</p>
+                <Profile></Profile>
             </div>
         </div>
     );
